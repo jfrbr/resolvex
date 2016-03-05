@@ -1,0 +1,94 @@
+<template name="addquestion">
+
+	<div class="content-wrapper">
+		<!-- Content Header (Page header) -->
+		<section class="content-header">
+			<h1>
+				Adicionar questão
+			</h1>
+			<small> Utilize este espaço para inserir questões e ajudar a comunidade.</small>
+		</section>
+
+		<!-- Main content -->
+		<section class="content">
+			<div class="container">
+			<form role="form" class="form-horizontal">
+				<div class="row">
+					<div class="form-group col-md-4">
+						<label for="ano">Ano:</label>
+						<select class="form-control c-select" name="addquestionselectano">
+							<option>2015</option>
+							<option>2014</option>
+							<option>2013</option>
+							<option>2012</option>
+							<option>2011</option>
+						</select>
+					</div>
+					<div class="form-group col-md-4">
+						<label for="banca">Banca:</label>
+						<select class="form-control c-select" name="addquestionselectbanca">
+							<option>UERJ</option>
+							<option>ENEM</option>
+						</select>
+					</div>
+					<div class="form-group col-md-4">
+						<label for="dificuldade">Dificuldade:</label>
+						<select class="form-control c-select" name="addquestionselectdificuldade">
+							<option>Fácil</option>
+							<option>Médio</option>
+							<option>Difícil</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group col-md-3">
+						<label for="disciplina">Tópico:</label>
+						<select class="form-control c-select" name="addquestionselecttopico" id="addquestionselecttopico">
+							<option>          </option>
+							<option>Matemática</option>
+							<option>Português</option>
+						</select>
+					</div>
+					<div class="form-group col-md-3">
+						<label for="disciplina">Subtópico:</label>
+						<select class="form-control c-select" name="addquestionselectsubtopico" id="addquestionselectsubtopico">
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-8">
+						<div id="summernote"></div>
+					</div>
+				</div>
+				<br>
+				<button type="submit" class="btn btn-primary center-block"> Inserir questão </button>
+			</form>
+		</div>
+		</section>
+	</div>
+	<!-- /.content -->
+</template>
+
+<!--
+</template>
+
+<template name="addQuestionModal">
+<div class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+
+<div class="modal-header">
+<h4 class="modal-title">Questão inserida!</h4>
+</div>
+<div class="modal-body">
+Questão inserida com sucesso.
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal" href="{{pathFor route='addquestion'}}">Inserir outra questão</button>
+<button type="button" class="btn btn-default" data-dismiss="modal" href="{{pathFor route='home'}}">Voltar para home</button>
+</div>
+</div>
+</div>
+</div>
+</template>
+<!-- INSERIR LINKS para voltar para página / INSERIR FIGURA! COMO MANTER A ORDEM?-->

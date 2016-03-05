@@ -1,0 +1,42 @@
+<template name="profile">
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        Perfil
+      </h1>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container">
+        <div class="row">
+          <form role="form"  class="form-horizontal">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" name="email" value="{{emailusuario}}" readonly>
+            </div>
+            <div class="form-group">
+                <label for="name">Primeiro nome:</label>
+                <input type="text" name="nome" value="{{nomeusuario}}">
+            </div>
+            <div class="form-group">
+                <label for="name">Sobrenome:</label>
+                <input type="text" name="sobrenome" value="{{sobremonenomeusuario}}">
+            </div>
+        <!--    <div class="form-group">
+                <label for="imagem">Imagem:</label>
+                <input type="file" name="imagem" class="uploadimage">
+            </div>
+
+            <img src="{{enderecoavatar}}" style="width: 64px; height: 64px;"> -->
+
+            <br><br>
+            <button type="submit" class="btn btn-default"> Salvar alterações </button>
+          </form>
+          </div>
+        </div>
+      </section>
+      <!-- /.content -->
+    </div>
+  </template>

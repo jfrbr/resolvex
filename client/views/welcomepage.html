@@ -1,0 +1,85 @@
+<template name="welcomepage">
+
+<div class="jumbotron">
+      <div class="container">
+        <h1>Seja bem vindo ao Resolve(x)!</h1>
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button" id="enter">Entrar no site &raquo;</a>
+        <a class="btn btn-primary btn-lg" href="#" role="button" id="register">Registrar &raquo;</a></p>
+      </div>
+</div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Notícia 1</h2>
+          <p>Mais de 10000 questões cadastradas! </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Notícia 2</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Notícia 3</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
+
+    </div>
+</template>
+
+<template name="loginModal">
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h4 class="modal-title">Entrar no Resolve(X)</h4>
+                </div>
+                <div class="modal-body">
+                  <form role="form">
+                  <div class="form-group">
+                    <input type="email" name="email" class="form-control" placeholder="Digite aqui seu e-mail" required>
+                  </div>
+                  <div class="form-group">
+                    <input type="password" name="password" class="form-control" placeholder="Digite aqui sua senha" required>
+                  </div>
+                    <button type="submit" class="btn btn-default"> Entrar </button>
+                  </form>
+                </div>
+                <div class="modal-footer"> <!-- TODO: adicionar botao de recuperar -->
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+<template name="registerModal">
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h4 class="modal-title">Registrar</h4>
+                </div>
+                <div class="modal-body">
+                  <form role="form">
+                  <div class="form-group">
+                    <input type="email" name="email" class="form-control" placeholder="Digite aqui seu e-mail" required>
+                  </div>
+                  <div class="form-group">
+                    <input type="password" name="password" class="form-control" placeholder="Digite aqui sua senha" required>
+                  </div>
+                    <button type="submit" class="btn btn-default"> Registrar </button>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

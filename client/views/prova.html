@@ -1,0 +1,37 @@
+<template name="prova">
+
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        Prova
+      </h1>
+      <small> Nesta seção, você poderá visualizar a prova que está sendo construída. </small>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      {{#each provaselecionada}}
+      <div id="target-element">
+        <h2><span class="label label-default">{{nome}}</span></h2> <br>
+        {{#each questoes}}
+        <div class="question">
+          <div class="panel panel-default">
+            <div class="panel-heading number"> Questão {{@index}} </div>
+            <div class="container">
+              <div class="panel-body panel-info">
+                <span class="banca">{{banca}}</span><span class="ano"> ({{ano}}) </span><span class="dificuldade">{{dificuldade}}</span>
+                <p> {{{texto}}} </p>
+              </div>
+              <button class="btn btn-warning removerquestao"> Remover questão </button>
+            </div>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+      {{/each}}
+    </section>
+    <!-- /.content -->
+  </div>
+
+</template>

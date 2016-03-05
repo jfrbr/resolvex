@@ -1,0 +1,26 @@
+<template name="questions">
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        Questões - {{nomeProva}}
+      </h1>
+      <small> Para adicionar as questões, basta arrastar para a área preta ao lado. </small>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+
+      {{#each questionslist}}
+      <div class="question" draggable="true">
+        <div class="panel panel-default">
+          <div class="panel-heading number"> <h4>Questão {{@index}} </h4></div>
+          {{>questionitem}}
+        </div>
+      </div>
+      {{/each}}
+
+    </section>
+    <!-- /.content -->
+  </div>
+</template>

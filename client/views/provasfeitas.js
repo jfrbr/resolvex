@@ -33,5 +33,8 @@ Template.provasfeitas.events({
 
     var idProva = Session.get('idProvaSelecionada');
     Router.go('/provas/'+idProva);
+  },
+  'click .removeprova': function(event){
+    console.log("Inserir código para remover prova");
   }
 });

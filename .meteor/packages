@@ -27,3 +27,4 @@ accounts-password
 cfs:filesystem
 cfs:standard-packages
 summernote:summernote
+babrahams:html2docx

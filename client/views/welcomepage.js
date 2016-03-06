@@ -31,6 +31,7 @@ Template.loginModal.events({
         }
       } else {
         Modal.hide('loginModal');
+        alert("Logado com sucesso");
         Router.go("/home");
       }
     });
@@ -45,5 +46,6 @@ Template.registerModal.events({
       email: emailVar,
       password: passwordVar
     });
+    alert("Usuário registrado");
   }
 });

@@ -1,3 +1,16 @@
-1) Paginação
-2) Perfil do usuário
-3) Botão 'remover' após montar .doc
+1) Terminal informações sobre perfil de usuário: endereço, professor de qual disciplina, quantidade de questões inseridades, quantidade de provas feitas, etc
+2) Habilitar um campo para visualização de questões sem criar prova
+3) Adicionar funcionalidade ao botão 'Finalizar prova'
+4) Adicionar funcionalidade ao botão 'Ver gabarito'
+5) Na tela 'questoes', inserir filtros de questões (igual aos filtros que tem o 'adicionar questão')
+6) Corrigir do 'montar prova' não está funcionando no Word
+7) Adicionar paginação nas questões e provas
+8) Adicionar botão e funcionalidade para remover questão após inserida na prova
+9) 'Visualizar prova' como um Modal
+10) Remover insecure e autopublish
+11) Corrigir bugs de sessão: após usuário deslogar e digitar /home volta ao /home do usuário mesmo tendo deslogado
+12) Adicionar funcionalidades de conta: recuperação de senha por e-mail e validação de e-mail após cadastro
+13) Funcionalidade: Não permitir duas provas com mesmo nome
+14) Funcionalidade: Não permitir duas questões com mesmo texto
+15) Terminar de adicionar as opções de subtopicos (hoje tem somente o de matemática)
+16) Adicionar botões 'voltar' as páginas
